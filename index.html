@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Q-Learning</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="Styles/styles.css">
+	<script src="Scripts/env.js" defer></script>
+	<script src="Scripts/agent.js" defer></script>
+	<script src="Scripts/main.js" defer></script>
+</head>
+<body>
+	<h1>Q-Learning, Frozen Lake</h1>
+	<h2>Pause</h2>
+
+	<div>
+		<input type="checkbox" name="random_map" id="checkbox_random_map">
+		<label for="random_map">Use Random Map Generator</label>
+	</div>
+	<div>
+		<input type="checkbox" name="clever_state" id="checkbox_clever_state">
+		<label for="clever_state">Use Clever States Agent</label>
+	</div>
+	<div class = "div_player">
+	<button class = "player" id='play'>Play</button>
+	<button class = "player" id='test'>Test</button>
+	</div>
+	<button class="agent" id='train'>Train</button>
+	<button class = "agent" id= 'q_table'>Q-Table</button>
+	<button class = "agent" id= 'watch'>Watch</button>
+	<p>Waiting ...</p>
+
+</body>
+</html>

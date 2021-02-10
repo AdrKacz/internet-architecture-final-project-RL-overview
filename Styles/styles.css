@@ -1,0 +1,47 @@
+html {
+	/*overflow: hidden;*/
+
+	text-align: center;
+
+	font-family: 'VT323', monospace;
+	font-size: 3vh;
+}
+
+button {
+	margin: 1vh auto;
+
+	font-family: 'VT323', monospace;
+	font-size: 3vh;
+}
+
+.agent {
+	display: all;
+}
+
+.player {
+	/*! display: block; */
+}
+
+.div_player {
+	display: flex;
+	width: 15vw;
+	margin: 1vh auto;
+}
+
+.game {
+	font-size: 6vh;
+}
+
+/*canvas {
+	border: 1vh solid black;
+}*/
+
+p {
+	white-space: pre;
+}
+
+em {
+	color: red;
+	font-style: normal;
+}
+
