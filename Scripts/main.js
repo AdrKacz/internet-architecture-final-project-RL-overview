@@ -1,6 +1,6 @@
 // Selectors
 const title = document.querySelector("h2");
-const text = document.querySelector("p");
+const text = document.querySelector("p#text");
 const train_btn = document.querySelector("#train");
 const play_btn = document.querySelector("#play");
 const test_btn = document.querySelector('#test');
@@ -78,11 +78,11 @@ function test() {
 	if (is_playing) {
 		play();
 	}
-	
+
 	if (is_watching) {
 		watch();
 	}
-	
+
 	text.setAttribute('class', '');
 	is_testing = true;
 
@@ -93,10 +93,10 @@ function test() {
 
 	let rendering = "The algorithm success rate is:\n\t\t" + average_success + " %.";
 	text.textContent = rendering;
-	
+
 	is_testing = false;
-		
-	
+
+
 }
 
 function train() {
@@ -194,7 +194,7 @@ function move(e) {
 			title.textContent = "Fell throught a hole!"
 		};
 		env.reset(use_random_checkbox.checked);
-	} 
+	}
 	else {
 		title.textContent = "Playing";
 	};
@@ -232,7 +232,7 @@ function update_agent(timestamp) {
 		// };
 
 		if (agent.q_table.length > 0) {
-			action_index = agent.exploit(use_clever_state_checkbox.checked);		
+			action_index = agent.exploit(use_clever_state_checkbox.checked);
 		}
 		else {
 			action_index = Math.floor(Math.random() * agent.action_space_size);
@@ -271,6 +271,3 @@ function update_agent(timestamp) {
 		rAF = window.requestAnimationFrame(update_agent);
 	};
 };
-
-
-
